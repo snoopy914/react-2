@@ -38,7 +38,21 @@ Strict: next. js의 기본 esLint 구성과 더욱 엄격한 Core Web Vitals 규
 - App Router(선택), app/layout.tsx 파일 및 app/page.tsx
 - Turbopack 사용(선택)
 - import alias 사용 (선택) : tsconfig.json에 paths 자동 생성.
-- 
+- 수동으로 프로젝트를 생성할 떄 추가적으로 해야 하는 작업을 자동으로 처리해 줍니다.
+
+Core web Vitals
+- Lcp : 뷰포트 내에서 가장 큰페이지 요소(큰 텍스트 블록, 이미지 또는 비디오)를 표시하는데 걸리는 시간.
+- Fid : 사용자가 웹페이지와 상호작용을 시도하는 첫 번째 순간부터 웹페이지가 응답하는 시간.
+- Cls : 방문자에게 콘텐츠가 얼마나 불안정한 지 측정하는 값.
+
+
+.eslintrc.json vs eslint.config.mjs
+
+npx create-next-app@latest
+
+pnpm은 Performant(효율적인) NPM의 약자로 고성능 Node 패키지 매니저이다.
+pnpm create next-app@latest
+
 
 ### 1주차
 OT
