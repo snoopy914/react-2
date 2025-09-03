@@ -15,7 +15,7 @@ Strict: next. js의 기본 esLint 구성과 더욱 엄격한 Core Web Vitals 규
 
 - ESLint가 설정되면 빌드할 때마다 매번 자동으로 실행된다. 오류가 발생하면 빌드는 실패한다.
 
-- 7. import 및 모듈의 절대 경로 별칭 설정
+7. import 및 모듈의 절대 경로 별칭 설정
  
   - next.js에는 tsconfig.json 및 jsconfig.json 파일의 paths 및 baseUrl 옵션에 대한 지원을 내장하고 있다.
   - 이 옵션을 사용하면 프로젝트 디렉터리를 절대 경로로 별칭 하여 모듈을 더쉽고 깔끔하게 가져올 수 있다.
@@ -28,6 +28,17 @@ Strict: next. js의 기본 esLint 구성과 더욱 엄격한 Core Web Vitals 규
     import { Button } from '@/components/button'
     ```
   - 별칭으로 import를 구성하려면 tsconfig.json 또는 jsconfig.json 파일의 baseUrl에 구성 옵션을 추가하세요.
+
+자동 생성되는 항목
+- package.json 파일에 scripts 자동 추가 / public 디렉토리
+- typescript 사용(선택) : tsconfig.json 파일 생성
+- eslint 설정 (선택) : eslintrc.json 대신 eslint.config.mjs 파일 생성
+- tailwind css 사용 (선택)
+- src 디렉토리 사용 (선택)
+- App Router(선택), app/layout.tsx 파일 및 app/page.tsx
+- Turbopack 사용(선택)
+- import alias 사용 (선택) : tsconfig.json에 paths 자동 생성.
+- 
 
 ### 1주차
 OT
