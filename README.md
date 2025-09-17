@@ -1,6 +1,42 @@
 # react-2
 
 # 201930413 박찬우
+### 4주차
+
+git checkout vs git switch 차이
+그런데 왜 checkout은 그대로 남아있나?
+-> 파일 복원 등 이미 commit된 파일을조작할 수 있기 때문입니다.
+-> 특히 git checkout [커밋 해시] 명령으로 특정 commit으로 이동할 수 있습니다.
+새 brach를 만드는 명령 3가지
+
+switch와 checkout은 branch를 만들면서 곧바로 이동한다.
+
+# 1. Creating a page(페이지 만들기)
+- Next.js는 파일 시스템 기반 라우팅을 사용하기 때문에 폴더와 파일을 사용하여 경로를 정의할 수 있습니다.
+- 이번 장에서는 레이아웃과 페이지를 만들고 서로 연결하는 방법을 설명합니다.
+- page는 특정 경로에서 렌더링되는 ui입니다.
+- page를 생성하려면 app 디렉터리에 page파이을 추가하고, React 컴포넌트를 
+Next.js는 파일 시스템 기반
+
+layout은 여러 페이지에 공유 되는 ui
+layout은 네비게이션에서 state 및 상호작용을 융지하며, 다시 렌더링 되지 안흔ㄴ다.
+layout 파일에서 react 컴포넌트의 default export를 사용하여 layout을 정의할 수 있다.
+layout 컴포넌트는 page 또는 다른 layout이 될 수 있는 children prop을 허용해야 한다.
+children은 컴포넌트 안에 감싸진 요소(컴포넌트)를 의미한다.
+
+# Creating a nested route(중첩 라우트 만들기)
+- 중첩 라우트는 다중 url 세그먼트로 구성된 라우트
+- 예를 들어 /blog/[slug]경로는 세 개의 세그먼트로 구성된다.
+- / (Root Segment)
+- blog (Segment)
+- [slug] (Leaf Segment)
+
+- [Next.js에서]
+- 폴더는 url 세그먼트에 매핑되는 경로 세그먼트로 정리되는데 사용한다.
+
+- 
+
+
 
 ### 3주차
 # 용어 정의
